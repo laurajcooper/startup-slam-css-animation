@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Ladies Learning Code</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- Takes care of CSS3 prefixes -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- opens all links in a new window -->
+  <base target="_blank">
+</head>
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+<body class="en" <!--data-duration="360"-->
+  <main>
+    <section class="slide welcome highlight">
+      <h1><!--<img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">-->Welcome!</h1>
+
+      <div class="instructions">
+        <!-- ADD WIFI INFO HERE -->
+        <h2>Get <br>Connected</h2>
+        <p><strong>Wifi:</strong> wifi network</p>
+        <p><strong>Password:</strong> wifi password</p>
+        <hr>
+
+        <h2>Download<br> & Install</h2>
+        <ol class="downloads">
+          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-html-css-1.5-hour/master.zip">[LINK]</a>
+            <ul>
+              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
+              <li>open <em>slides.html</em> in the browser to view the slides</li>
+            </ul>
+          </li>
+          <li>Atom Editor: <a href="http://atom.io">http://atom.io</a></li>
+          <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          </li>
+        </ol>
+      </div>
+
+      <footer>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+
+    <section class="slide intro">
+      <div class="intro-content">
+        <!--<img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">-->
+        <h1 class="heading-bg">
+          <span>Exploring Animation with CSS3</span>
+        </h1>
+
+        <!-- FILL IN INSTRUCTOR DETAILS -->
+        <img class="instructor" src="framework/img/workshop/laura.jpg" alt="Laura Cooper">
+        <h2><span class="cursive">with</span> Laura Cooper</h2>
+        <ul>
+          <li>Front-End Developer at <a href="http://leapxd.com" target="_blank">Leap XD</a></li>
+          <li>Instructor &amp; Mentor at <a href="http://ladieslearningcode.com/chapters/victoria/" target="_blank">Ladies Learning Code</a></li>
+        </ul>
+
+      </div>
+
+      <footer>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+      #CSS Review
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS: Cascading Style Sheets
+
+        * a different language from HTML
+        * a stylesheet language with its own syntax rules
+        * used to separate content (HTML) from presentation (CSS)
+
+        CSS requires these symbols: curly brackets `{ }`, colon `:`, semi-colon `;`
+
+        ![keyboard](framework/img/workshop/keyboard-css.png)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #A WEBPAGE WITHOUT CSS
+        <img src= "framework/img/nocss.jpg" alt="Website without CSS">
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #A WEBPAGE WITH CSS
+
+        <img src= "framework/img/css.jpg" alt="Website with CSS">
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS Syntax
+        ```
+        selector {
+          property: value;
+        }
+        ```
+        **Selectors:** determine which HTML element or elements the rules apply to
+
+        **Properties** determine what property we want to make a rule about, like colour, or font size.
+
+        **Values** determine what that property will be set to: like red, or 20px.
+
+        ```
+        p {
+          font-size: 16px;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        <div class="iframe-container">
+          <iframe width="1000" height="750" src="https://codepen.io/yashbhardwaj/full/yFIiJ/"></iframe>
+        </div>
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        <div class="iframe-container">
+          <iframe width="1000" height="750" src="https://codepen.io/funkybudda/full/plgfa/"></iframe>
+        </div>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Animatable CSS Properties</h1>
+
+        Many CSS properties can be targeted and changed using transition and animation style rules.
+
+        Some of the most common options are:
+
+        <ul>
+          <li>background-color</li>
+          <li>color</li>
+          <li>width</li>
+          <li>height</li>
+          <li>opacity</li>
+          <li>transform</li>
+        </ul>
+
+        <a href="https://www.w3schools.com/cssref/css_animatable.asp" target="_blank">Full list of animatable properties</a>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>CSS3 Transform</h1>
+
+        <strong>translateX(x):</strong>
+        Moves an object along the X-axis (horizontal) by a specified value
+
+        <strong>translateY(y):</strong>
+        Moves an object along the X-axis (vertical) by a specified value
+
+        <strong>rotate(angle):</strong>
+        Rotates the object by a specified angle
+
+        <strong>scale(x,y):</strong> Reduces or enlarges an object by a specified value or values
+
+        <strong>transform-origin:</strong> Specifies the point from which the transform should happen.
+
+        <a href="https://www.w3schools.com/cssref/css3_pr_transform.asp" target="_blank">Full list of transform properties</a>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>CSS Transitions</h1>
+
+        <strong>What is a transition?</strong>
+        <ul>
+          <li>an element changes from one state to another</li>
+          <li>the browser fills in that state change with a sequence of in-between frames</li>
+          <li>has a beginning and an end state</li>
+        </lu>
+
+        <strong>When to use transitions:</strong>
+
+        If you want to change an element from one state to another (for example, when someone hovers over a link or button), a transition is a good choice.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Transition Properties</h1>
+        <strong>transition-property:</strong>
+          The name or names of the CSS properties to which transitions should be applied.
+
+        <strong>transition-duration:</strong>
+          The duration over which transitions should occur. You can specify a single duration that applies to all properties during the transition, or a different value for each CSS property.
+
+        <strong>transition-timing-function:</strong>
+          The speed curve of the transition.
+
+        <strong>transition-timing-delay:</strong>
+          How long to wait between the time a property is changed and the transition begins.
+
+        Transitions are written like this:
+
+        <code><pre>
+        div {
+          transition: property duration timing-function delay;
+        }
+        </pre></code>
+
+        <a href="http://ianlunn.github.io/Hover/" target="_blank">Hover.css - A collection of CSS3 hover effects</a>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>CSS Animations</h1>
+        <strong>What are animations?</strong>
+
+        <ul>
+          <li>can be made up of many in-between states rather than just a beginning and end state</li>
+
+          <li>reference a set of keyframes that are described separately in the CSS</li>
+        </ul>
+
+        <strong>When to use animations:</strong>
+
+        If an animation needs to run in any other situation other than a single element changing states, or is more complex than a simple A to B change, a CSS animation may be a better option.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>CSS3 Animation Properties</h1>
+          <strong>animation-name:</strong>
+            The name of the keyframe you want to use on your css selector
+
+          <strong>animation-duration:</strong>
+            How many seconds or milliseconds an animation takes to complete
+
+          <strong>animation-timing-function:</strong>
+            The speed curve of the animation
+
+          <strong>animation-delay:</strong>
+            A delay before the animation will start
+
+          <strong>animation-iteration-count:</strong>
+            How many times an animation should be played
+
+          <strong>animation-direction:</strong>
+            Whether or not the animation should play in reverse or alternate
+
+          <strong>animation-fill-mode:</strong>
+            What values are applied by the animation outside the time it is executing
+
+          <strong>animation-play-state:</strong>
+            Whether or not the animation is running or paused
+
+        More about animation properties at <a href="https://www.w3schools.com/cssref/css3_pr_animation.asp">W3 Schools</a>
+      </script>
+      </section>
+
+
+      <section class="slide" data-markdown>
+        <script type="text/template">
+          <h1>Animation Properties: Shorthand Version</h1>
+
+          <code><pre>
+          animation:
+            name, duration, timing-function, delay, iteration-count, direction, fill-mode, play-state;
+        </pre></code>
+
+          You don't need to provide all of these parameters, but you need animation-name and animation-duration at minimum for your animation to run.
+        </script>
+      </section>
+
+
+
+      <section class="slide" data-markdown>
+        <script type="text/template">
+          <h1>Keyframes</h1>
+          Keyframes allow you to target CSS properties and change them at various stages of the animation.
+
+          They follow the following format:
+          <code><pre>
+          @keyframes your-animation-name {
+            keyframes-selector { css-styles; }
+            keyframes-selector { css-styles; }
+          }
+        </pre></code>
+
+          They can use any value between 0% and 100%.
+          <code><pre>
+          @keyframes your-animation-name {
+            0% { selector: value; }
+            100% { selector: value; }
+          }
+          </pre></code>
+
+          Applying a keyframe animation to an element:
+          <code><pre>
+          .your-animated-div {
+            animation: your-animation-name 5s;
+          }
+          </pre></code>
+
+          <a href="https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp" target="_blank">Read more about keyframes (W3 Schools)</a>
+        </script>
+      </section>
+
+
+      <section class="slide" data-markdown>
+        <script type="text/template">
+          <h1>Cross-Browser Compatibility</h1>
+
+          Transitions and animations need browser prefixes to work correctly in all browsers.
+
+          <code><pre>
+            @-webkit-keyframes your-animation-name { }
+            @-moz-keyframes your-animation-name { }
+            @-o-keyframes your-animation-name { }
+            @keyframes your-animation-name { }
+
+            .your-animated-div {
+              -webkit-animation: your-animation-name; /* Safari 4+ */
+              -moz-animation:    your-animation-name; /* Fx 5+ */
+              -o-animation:      your-animation-name; /* Opera 12+ */
+              animation:         your-animation-name; /* IE 10+, Fx 29+ */
+            }
+        </pre></code>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>SVGs: Scalable Vector Graphics</h1>
+        <ul>
+          <li>used to define vector-based graphics in XML format for web use</li>
+          <li>maintain quality when scaled to any size</li>
+          <li>animatable using CSS3</li>
+          <li>mostly, but not yet fully supported in all browsers</li>
+        </ul>
+
+         For full information on SVG browser support, <a href="http://caniuse.com/#feat=svg">click here</a>.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Google Chrome Inspector Tool</h1>
+        The Inspector tool in Google Chrome is a very useful tool for working with CSS transitions and animations.
+
+        To access the Inspector, right-click on a webpage while using Chrome and select <strong>Inspect Element</strong>.
+
+        Click the Styles tab to see all style rules being applied to an element through stylesheets.
+
+        Activate the Animations panel by clicking the <strong>Settings</strong> button in the inspector (3 vertical dots) <strong>> More Tools > Animations</strong>.
+
+        ![animations-panel](framework/img/workshop/animation-panel.jpg)
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+      #Animation Time!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Animation.css</h1>
+        For today's examples, all the HTML has been created for you already, as well as some base styles for the page.
+
+        We'll mainly just be working with the animation.css file.
+
+        Open your index.html file in Chrome. You can do this by opening Chrome and going to <strong>File > Open File</strong>.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Working with Atom</h1>
+         To open the project files, open Atom and then go to <strong>File > Add Project Folder</strong> and then navigate to the folder you downloaded previously. Select the "project" folder. Then, double-click the "animation.css" file to open it.
+
+         ![editor-add-project](framework/img/workshop/editor-add-project.jpg)
+
+         Once you've made changes to your file, you can go to <strong>File > Save</strong> or simply hit <strong>Command (or CTRL on PC) + S</strong>.
+
+         Then, refresh your index.html file in Chrome to see the changes.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 1: Add Movement to the Headline</h1>
+        There is a heading on our page for outer space, but it would be better with some animation. Let's make a keyframe called "fade-in" to make the heading fade in and grow at the same time.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 1: Add Movement to the Headline</h1>
+        We need to use the <strong>scale</strong> transform and <strong>opacity</strong> properties to achieve this. Opacity can accept percentage values, but scale cannot, so when using transforms the number 1 is used to represent 100%.
+
+        We also need to apply our "fade-in" animation to our text and specify how long it should take, how many times the animation should run, and what timing function to use.
+
+        In order for our title to start by being transparent on page load before the animation runs, we need to specify <strong>animation-fill-mode: forwards</strong>.
+
+        <code><pre>
+        @keyframes fade-in {
+          0% {
+            opacity: 0;
+            transform: scale(1);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1.5);
+          }
+        }
+
+        .title {
+          animation: fade-in 7s ease-in-out;
+          animation-fill-mode: forwards;
+        }
+      </pre></code>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 2: Make the World Spin</h1>
+
+        Let's use some CSS magic to simulate a spinning globe effect using only a simple background image, one div, and some CSS rules.
+
+        Create a new keyframe called "spin" and make the background image move.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 2: Make the World Spin</h1>
+
+        We're going to use percentage values to specify an X and Y value for the <strong>background-position</strong> property, starting at -100%, moving to 0, and then to 100% on the X axis. On the Y axis, we want our image to be centered, so we're setting it to 50% throughout.
+
+        <code><pre>
+          @keyframes spin {
+            0% {
+              background-position: -100% 50%;
+            }
+            50% {
+              background-position: 0 50%;
+            }
+            100% {
+              background-position: 100% 50%;
+            }
+          }
+
+          .earth {
+            animation: spin 10s infinite linear;
+          }
+        </pre></code>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 3: Make the Sun's Rays Grow</h1>
+
+        Let's make a new keyframe called "grow" and apply it to our sun rays. We want our rays to start the animation by scaling up slightly, then fading away at the end.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 3: Make the Sun's Rays Grow</h1>
+
+        We're using the <strong>scale</strong> transform property here, as well as the <strong>opacity</strong> property. We have set our animation to run for 1.5 seconds, an infinite number of times, using the ease-in-out timing function.
+
+        We want our effects to happen from the center outwards, so we also need to set the <strong>transform-origin</strong> to the center of the svg.
+        <code><pre>
+          @keyframes grow {
+            0% {
+              transform: scale(100%);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(130%);
+              opacity: 0;
+            }
+          }
+
+          .sun .ray {
+            animation: grow 1.5s infinite ease-in-out;
+            transform-origin: 50% 50%;
+          }
+        </pre></code>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 4: Make the Rocket Launch</h1>
+
+        Our rocket would look better if it had some flickering flames. Let's create a keyframe called "fire" and use the scale transform property to increase and decrease the size of the flame slightly.
+
+        <code><pre>
+          @keyframes fire {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.1);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+
+          .rocket .flame {
+            animation: fire 200ms infinite ease-in-out;
+            transform-origin: 100% 0%;
+          }
+        </pre></code>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 4: Make the Rocket Launch</h1>
+
+        Next, we're going to make it so our rocket flies away when clicked on.
+
+        For this example, we're using a CSS pseudo-class called <strong>:focus</strong> to trigger our animation only when the rocket is clicked on, but normally you would want to use something like JavaScript instead to more accurately target user interactions.
+
+        By default, Chrome adds a blue outline around things that are targeted using :focus, so we need to add an extra CSS rule to remove that.
+
+        <code><pre>
+          @keyframes fly {
+            0% {
+              transform: translate(0, 0) scale(1);
+            }
+            100% {
+              transform: translate(2000px, -2000px) scale(0.2);
+            }
+          }
+
+          .rocket:focus {
+            animation: fly 1s ease-in;
+            outline: none;
+          }
+        </pre></code>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Bonus: Animate.css</h1>
+
+        Animate.css is a library containing a large amount of premade keyframe animations.
+
+        If you want to experiment more with CSS3 animation, you can add a link to the animate.css stylesheet into your index.html file, then just add classes to the elements that you'd like animated.
+
+        <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css Demo</a>
+
+        <a href="https://github.com/daneden/animate.css" target="_blank">Animate.css on Github</a>
+
+      </script>
+    </section>
+
+
+  <!-- Last slide -->
+    <section class="slide last">
+      <h1>Thank you!</h1>
+      <img class="instructor" src="framework/img/workshop/laura.jpg" alt="Laura Cooper">
+      <h2><span class="cursive">with</span> Laura Cooper</h2>
+      <ul>
+        <li>Front-End Developer at <a href="http://leapxd.com" target="_blank">Leap XD</a></li>
+        <li>Instructor &amp; Mentor at <a href="http://ladieslearningcode.com/chapters/victoria/" target="_blank">Ladies Learning Code</a></li>
+      </ul>
+
+      <p class="attribution">Slide presentation originally created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- cls main section -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Uncomment the plugins you need -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Grabs all the .snippet elements
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+
+
+
+</html>
