@@ -21,7 +21,7 @@
   }
 }
 
-@mixin label($padding, $color) {
+/*@mixin label($padding, $color) {
   padding-top: $padding+px;
   color: $color;
   border-left: 4px solid $color;
@@ -108,10 +108,40 @@
 .examples {
   margin-left: 5%;
   span {
-    color: $llc-pink;
+    color: $brand;
     font-size: 20px;
     text-transform: uppercase;
     display: block;
     margin-top: 6px;
   }
+}*/
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(200px); }
+  100% { transform: translateX(200px); opacity: 0 }
+}
+
+.square {
+  animation: move 2s ease-in-out infinite;
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+
+@keyframes blue-to-red-spin {
+  0% {
+    background-color: blue;
+    transform: rotate(0deg);
+  }
+  100% {
+    background-color: red;
+    transform: rotate(720deg);
+  }
+}
+
+.square2 {
+  animation: blue-to-red-spin 2s infinite;
+  width: 100px;
+  height: 100px;
 }

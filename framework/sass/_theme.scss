@@ -24,7 +24,7 @@ body {
   line-height: $line-height;
   font-family: $base-font;
   color: $gray;
-  border-top: 4px solid $llc-pink;
+  border-top: 4px solid $brand;
   -webkit-font-smoothing: antialiased;
   background: #F7FFF4;
 }
@@ -36,10 +36,10 @@ strong {
 
 h1 {
   font-family: $heading-font;
-  letter-spacing: -0.05em;
+  //letter-spacing: 0.05em;
   text-transform: uppercase;
   margin: 0 0 25px;
-  color: $llc-pink;
+  color: $brand;
   font-size: $font-size-heading;
 
   .title & {
@@ -74,7 +74,7 @@ a {
   color: inherit;
 
   &:hover {
-    color: $llc-pink;
+    color: $brand;
     text-decoration: none;
   }
 }
@@ -126,7 +126,7 @@ ul {
 
     &:before {
       content: "\203A"; // › symbol
-      font-family: $quicksand;
+      font-family: $base-font;
       font-weight: bold;
       margin-left: -19px;
       padding-right: 10px;
@@ -279,11 +279,11 @@ iframe.right {
 }
 .cursive {
   font-family: $cursive;
-  color: $llc-pink;
+  color: $brand;
 }
 .highlight em,
 a.highlight {
-  color: $llc-pink;
+  color: $brand;
   font-size: 106%;
   padding-right: 2px;
 }
@@ -362,7 +362,7 @@ a.highlight {
   right: 20px;
   font-size: 20px;
   text-shadow: none;
-  color: $llc-pink;
+  color: $brand;
   background: white;
   padding: 2px 8px;
 }
@@ -489,7 +489,7 @@ e.g.
 */
 .heading-bg {
   span {
-    background: rgba($llc-pink, 0.8);
+    background: rgba($brand, 0.8);
     border-radius: 5px;
     padding: 0 10px 0 6px;
     box-decoration-break: clone;
@@ -531,8 +531,8 @@ e.g.
     float: left;
     color: black;
     width: 21%;
-    font-family: $quicksand;
-    color: $llc-pink;
+    font-family: $heading-font;
+    color: $brand;
     text-transform: uppercase;
     font-size: 30px;
   }
@@ -595,7 +595,7 @@ e.g.
     color: white;
   }
   footer a {
-    color: $llc-pink;
+    color: $brand;
   }
 }
 .slide.last {
@@ -636,7 +636,7 @@ footer {
     margin: 6px 10px 0 8px;
   }
   .arrow {
-    color: $llc-pink;
+    color: $brand;
   }
   img {
     margin-bottom: -5px;
@@ -657,7 +657,7 @@ footer {
     color: $gray-dark;
 
     &:hover {
-      color: $llc-pink;
+      color: $brand;
     }
   }
 }

@@ -27,16 +27,17 @@
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
         <h2>Get <br>Connected</h2>
-        <p><strong>Wifi:</strong> wifi network</p>
-        <p><strong>Password:</strong> wifi password</p>
+        <p><strong>Wifi:</strong> StartupSlam 2017</p>
+        <p><strong>Password:</strong> startupslam</p>
+
         <hr>
 
         <h2>Download<br> & Install</h2>
         <ol class="downloads">
-          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-html-css-1.5-hour/master.zip">[LINK]</a>
+          <li>Workshop files (zip file): <a href="https://github.com/laurajcooper/startup-slam-css-animation/archive/master.zip">goo.gl/2RJe4U</a>
             <ul>
-              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
-              <li>open <em>slides.html</em> in the browser to view the slides</li>
+              <li>unzip the zip file (<em>extract all</em> if you’re on a PC)</li>
+              <li>open <em>slides.html</em> in Chrome to view the slides</li>
             </ul>
           </li>
           <li>Atom Editor: <a href="http://atom.io">http://atom.io</a></li>
@@ -176,7 +177,7 @@
         Moves an object along the X-axis (horizontal) by a specified value
 
         <strong>translateY(y):</strong>
-        Moves an object along the X-axis (vertical) by a specified value
+        Moves an object along the Y-axis (vertical) by a specified value
 
         <strong>rotate(angle):</strong>
         Rotates the object by a specified angle
@@ -213,21 +214,30 @@
           The name or names of the CSS properties to which transitions should be applied.
 
         <strong>transition-duration:</strong>
-          The duration over which transitions should occur. You can specify a single duration that applies to all properties during the transition, or a different value for each CSS property.
+          The duration of the state change. You can specify a single duration that applies to all properties, or a different value for each CSS property.
 
         <strong>transition-timing-function:</strong>
           The speed curve of the transition.
 
         <strong>transition-timing-delay:</strong>
-          How long to wait between the time a property is changed and the transition begins.
+          How long to wait between the time a state is changed and the transition begins.
 
         Transitions are written like this:
 
-        <code><pre>
+        ```
         div {
           transition: property duration timing-function delay;
         }
-        </pre></code>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Transition Example: Button Hover</h1>
+
+
+
 
         <a href="http://ianlunn.github.io/Hover/" target="_blank">Hover.css - A collection of CSS3 hover effects</a>
       </script>
@@ -286,12 +296,19 @@
         <script type="text/template">
           <h1>Animation Properties: Shorthand Version</h1>
 
-          <code><pre>
-          animation:
-            name, duration, timing-function, delay, iteration-count, direction, fill-mode, play-state;
-        </pre></code>
+          Specify each animation property in the following order:
 
-          You don't need to provide all of these parameters, but you need animation-name and animation-duration at minimum for your animation to run.
+          <strong>animation:</strong><br>
+          &nbsp;&nbsp;&nbsp;name<br>
+          &nbsp;&nbsp;&nbsp;duration<br>
+          &nbsp;&nbsp;&nbsp;timing-function<br>
+          &nbsp;&nbsp;&nbsp;delay<br>
+          &nbsp;&nbsp;&nbsp;iteration-count<br>
+          &nbsp;&nbsp;&nbsp;direction<br>
+          &nbsp;&nbsp;&nbsp;fill-mode<br>
+          &nbsp;&nbsp;&nbsp;play-state;<br>
+          <br>
+          Note: You don't need to provide all of these parameters, but you need animation-name and animation-duration at minimum in order for your animation to run.
         </script>
       </section>
 
@@ -303,29 +320,78 @@
           Keyframes allow you to target CSS properties and change them at various stages of the animation.
 
           They follow the following format:
-          <code><pre>
+          ```
           @keyframes your-animation-name {
             keyframes-selector { css-styles; }
             keyframes-selector { css-styles; }
           }
-        </pre></code>
+          ```
 
           They can use any value between 0% and 100%.
-          <code><pre>
+          ```
           @keyframes your-animation-name {
             0% { selector: value; }
             100% { selector: value; }
           }
-          </pre></code>
+          ```
 
           Applying a keyframe animation to an element:
-          <code><pre>
+          ```
           .your-animated-div {
             animation: your-animation-name 5s;
           }
-          </pre></code>
+          ```
 
           <a href="https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp" target="_blank">Read more about keyframes (W3 Schools)</a>
+        </script>
+      </section>
+
+      <section class="slide" data-markdown>
+        <script type="text/template">
+          <h1>Animation Example: Translate &amp; Opacity</h1>
+          ```
+          @keyframes move {
+            0% {
+              transform: translateX(0);
+            }
+            50% {
+              transform: translateX(200px);
+            }
+            100% {
+              transform: translateX(200px);
+              opacity: 0;
+            }
+          }
+          .square {
+            animation: move 2s infinite;
+          }
+          ```
+
+          <div class="square"></div>
+        </script>
+      </section>
+
+      <section class="slide" data-markdown>
+        <script type="text/template">
+          <h1>Animation Example: Background Color &amp; Rotation</h1>
+          ```
+          @keyframes blue-to-red-spin {
+            0% {
+              background-color: blue;
+              transform: rotate(0deg);
+            }
+            100% {
+              background-color: red;
+              transform: rotate(720deg);
+            }
+          }
+
+          .square2 {
+            animation: blue-to-red-spin 2s ease-in-out infinite;
+          }
+          ```
+
+          <div class="square2"></div>
         </script>
       </section>
 
@@ -336,19 +402,19 @@
 
           Transitions and animations need browser prefixes to work correctly in all browsers.
 
-          <code><pre>
-            @-webkit-keyframes your-animation-name { }
-            @-moz-keyframes your-animation-name { }
-            @-o-keyframes your-animation-name { }
-            @keyframes your-animation-name { }
+          ```
+          @-webkit-keyframes your-animation-name { }
+          @-moz-keyframes your-animation-name { }
+          @-o-keyframes your-animation-name { }
+          @keyframes your-animation-name { }
 
-            .your-animated-div {
-              -webkit-animation: your-animation-name; /* Safari 4+ */
-              -moz-animation:    your-animation-name; /* Fx 5+ */
-              -o-animation:      your-animation-name; /* Opera 12+ */
-              animation:         your-animation-name; /* IE 10+, Fx 29+ */
-            }
-        </pre></code>
+          .your-animated-div {
+            -webkit-animation: your-animation-name; /* Safari 4+ */
+            -moz-animation:    your-animation-name; /* Fx 5+ */
+            -o-animation:      your-animation-name; /* Opera 12+ */
+            animation:         your-animation-name; /* IE 10+, Fx 29+ */
+          }
+          ```
       </script>
     </section>
 
@@ -375,7 +441,7 @@
 
         Click the Styles tab to see all style rules being applied to an element through stylesheets.
 
-        Activate the Animations panel by clicking the <strong>Settings</strong> button in the inspector (3 vertical dots) <strong>> More Tools > Animations</strong>.
+        Activate the Animations panel by clicking the <strong>Settings</strong> button in the inspector (3 vertical dots) ><strong> More Tools</strong > <strong>Animations</strong>.
 
         ![animations-panel](framework/img/workshop/animation-panel.jpg)
       </script>
@@ -389,32 +455,32 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        <h1>Animation.css</h1>
-        For today's examples, all the HTML has been created for you already, as well as some base styles for the page.
+        <h1>The Example Files</h1>
+        For today's examples, all the HTML has been created for you already, as well as some base styles for the page. There are classes added to images and SVGs so you shouldn't need to edit the HTML.
 
-        We'll mainly just be working with the animation.css file.
+        We'll mainly just be working with the <strong>index.html</strong> and <strong>animation.css</strong> files.
 
-        Open your index.html file in Chrome. You can do this by opening Chrome and going to <strong>File > Open File</strong>.
+        Open your <strong>index.html</strong> file in Chrome. You can do this by opening Chrome and going to <strong>File > Open File</strong>.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
         <h1>Working with Atom</h1>
-         To open the project files, open Atom and then go to <strong>File > Add Project Folder</strong> and then navigate to the folder you downloaded previously. Select the "project" folder. Then, double-click the "animation.css" file to open it.
+         To open the project files, open Atom and then go to <strong>File</strong> > <strong>Add Project Folder</strong> and then navigate to the folder you downloaded earlier. Select the "project" folder. Then, double-click the "animation.css" file to open it.
 
          ![editor-add-project](framework/img/workshop/editor-add-project.jpg)
 
-         Once you've made changes to your file, you can go to <strong>File > Save</strong> or simply hit <strong>Command (or CTRL on PC) + S</strong>.
+         Once you've made changes to your file, you can go to <strong>File</strong> > <strong>Save</strong> or simply hit <strong>Command</strong> (or CTRL on PC) <strong>+ S</strong>.
 
-         Then, refresh your index.html file in Chrome to see the changes.
+         Then, <strong>refresh your index.html file</strong> in Chrome to see the changes.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
         <h1>Exercise 1: Add Movement to the Headline</h1>
-        There is a heading on our page for outer space, but it would be better with some animation. Let's make a keyframe called "fade-in" to make the heading fade in and grow at the same time.
+        There is a heading on our page for outer space, but it would be better with some animation. Let's target the class "title" and make a keyframe called "fade-in" to make the heading fade in and grow at the same time.
       </script>
     </section>
 
@@ -425,9 +491,7 @@
 
         We also need to apply our "fade-in" animation to our text and specify how long it should take, how many times the animation should run, and what timing function to use.
 
-        In order for our title to start by being transparent on page load before the animation runs, we need to specify <strong>animation-fill-mode: forwards</strong>.
-
-        <code><pre>
+        ```
         @keyframes fade-in {
           0% {
             opacity: 0;
@@ -441,9 +505,23 @@
 
         .title {
           animation: fade-in 7s ease-in-out;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 1: Add Movement to the Headline</h1>
+
+        Our animation looks a bit funny, doesn't it? In order for our title to start by being transparent on page load before the animation runs, we need to specify <strong>animation-fill-mode: forwards</strong>.
+
+        ```
+        .title {
+          animation: fade-in 7s ease-in-out;
           animation-fill-mode: forwards;
         }
-      </pre></code>
+        ```
       </script>
     </section>
 
@@ -453,7 +531,7 @@
 
         Let's use some CSS magic to simulate a spinning globe effect using only a simple background image, one div, and some CSS rules.
 
-        Create a new keyframe called "spin" and make the background image move.
+        Target the class "earth" and create a new keyframe called "spin" and make the background image move.
 
       </script>
     </section>
@@ -464,23 +542,23 @@
 
         We're going to use percentage values to specify an X and Y value for the <strong>background-position</strong> property, starting at -100%, moving to 0, and then to 100% on the X axis. On the Y axis, we want our image to be centered, so we're setting it to 50% throughout.
 
-        <code><pre>
-          @keyframes spin {
-            0% {
-              background-position: -100% 50%;
-            }
-            50% {
-              background-position: 0 50%;
-            }
-            100% {
-              background-position: 100% 50%;
-            }
+        ```
+        @keyframes spin {
+          0% {
+            background-position: -100% 50%;
           }
+          50% {
+            background-position: 0 50%;
+          }
+          100% {
+            background-position: 100% 50%;
+          }
+        }
 
-          .earth {
-            animation: spin 10s infinite linear;
-          }
-        </pre></code>
+        .earth {
+          animation: spin 10s infinite linear;
+        }
+        ```
       </script>
     </section>
 
@@ -488,7 +566,7 @@
       <script type="text/template">
         <h1>Exercise 3: Make the Sun's Rays Grow</h1>
 
-        Let's make a new keyframe called "grow" and apply it to our sun rays. We want our rays to start the animation by scaling up slightly, then fading away at the end.
+        Let's make a new keyframe called "grow" and apply it to our sun rays by targeting the "ray" class inside the SVG with the "sun" class. We want our rays to start the animation by scaling up slightly, then fading away at the end.
       </script>
     </section>
 
@@ -498,24 +576,37 @@
 
         We're using the <strong>scale</strong> transform property here, as well as the <strong>opacity</strong> property. We have set our animation to run for 1.5 seconds, an infinite number of times, using the ease-in-out timing function.
 
-        We want our effects to happen from the center outwards, so we also need to set the <strong>transform-origin</strong> to the center of the svg.
-        <code><pre>
-          @keyframes grow {
-            0% {
-              transform: scale(100%);
-              opacity: 1;
-            }
-            100% {
-              transform: scale(130%);
-              opacity: 0;
-            }
+        ```
+        @keyframes grow {
+          0% {
+            transform: scale(100%);
+            opacity: 1;
           }
+          100% {
+            transform: scale(130%);
+            opacity: 0;
+          }
+        }
 
-          .sun .ray {
-            animation: grow 1.5s infinite ease-in-out;
-            transform-origin: 50% 50%;
-          }
-        </pre></code>
+        .sun .ray {
+          animation: grow 1.5s infinite ease-in-out;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 3: Make the Sun's Rays Grow</h1>
+
+        Our sun rays are animation the way we specified, but they aren't coming from the middle of the sun. We want our effects to happen from the center outwards, so we also need to set the <strong>transform-origin</strong> to the center of the svg.
+
+        ```
+        .sun .ray {
+          animation: grow 1.5s infinite ease-in-out;
+          transform-origin: 50% 50%;
+        }
+        ```
       </script>
     </section>
 
@@ -523,26 +614,28 @@
       <script type="text/template">
         <h1>Exercise 4: Make the Rocket Launch</h1>
 
-        Our rocket would look better if it had some flickering flames. Let's create a keyframe called "fire" and use the scale transform property to increase and decrease the size of the flame slightly.
+        Our rocket would look better if it had some flickering flames. Let's create a keyframe called "fire" and use the scale transform property to increase and decrease the size of the flame slightly. We will be targeting the "flame" class inside the svg with the "rocket" class.
 
-        <code><pre>
-          @keyframes fire {
-            0% {
-              transform: scale(1);
-            }
-            50% {
-              transform: scale(1.1);
-            }
-            100% {
-              transform: scale(1);
-            }
-          }
+        In this case, we want to set our transform origin to 100% 0.
 
-          .rocket .flame {
-            animation: fire 200ms infinite ease-in-out;
-            transform-origin: 100% 0%;
+        ```
+        @keyframes fire {
+          0% {
+            transform: scale(1);
           }
-        </pre></code>
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        .rocket .flame {
+          animation: fire 200ms infinite ease-in-out;
+          transform-origin: 100% 0%;
+        }
+        ```
       </script>
     </section>
 
@@ -552,25 +645,37 @@
 
         Next, we're going to make it so our rocket flies away when clicked on.
 
-        For this example, we're using a CSS pseudo-class called <strong>:focus</strong> to trigger our animation only when the rocket is clicked on, but normally you would want to use something like JavaScript instead to more accurately target user interactions.
+        For this example, we're using a CSS pseudo-class called <strong>:focus</strong> to trigger our animation only when the rocket SVG is clicked on, but normally you would want to use something like JavaScript instead to more accurately target user interactions.
+
+        ```
+        @keyframes fly {
+          0% {
+            transform: translate(0, 0) scale(1);
+          }
+          100% {
+            transform: translate(2000px, -2000px) scale(0.2);
+          }
+        }
+
+        .rocket:focus {
+          animation: fly 1s ease-in;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h1>Exercise 4: Make the Rocket Launch</h1>
 
         By default, Chrome adds a blue outline around things that are targeted using :focus, so we need to add an extra CSS rule to remove that.
 
-        <code><pre>
-          @keyframes fly {
-            0% {
-              transform: translate(0, 0) scale(1);
-            }
-            100% {
-              transform: translate(2000px, -2000px) scale(0.2);
-            }
-          }
-
-          .rocket:focus {
-            animation: fly 1s ease-in;
-            outline: none;
-          }
-        </pre></code>
+        ```
+        .rocket:focus {
+          animation: fly 1s ease-in;
+          outline: none;
+        }
+        ```
       </script>
     </section>
 

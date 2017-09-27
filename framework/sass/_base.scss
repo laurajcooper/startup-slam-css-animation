@@ -4,7 +4,7 @@
 
 // Colours
 //---------------
-$llc-pink:              #06A841;
+$brand:              #06A841;
 $black:                 #000;
 $gray-dark:             #222;
 $gray:                  #444;
@@ -15,11 +15,10 @@ $white:                 #fff;
 // Typography
 //---------------
 // Font families
-$quicksand:             'Quicksand', sans-serif;
 $pacifico:              'Pacifico', cursive;
 $open-sans:             'Open Sans', sans-serif;
-$monserrat:             'Montserrat', sans-serif;
-$heading-font:          $quicksand;
+$cabin:                 'Cabin', sans-serif;
+$heading-font:          $cabin;
 $base-font:             $open-sans;
 $cursive:               $pacifico;
 

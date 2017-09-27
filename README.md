@@ -7,8 +7,7 @@ CSS is critical for determining the way a website should look, and though basic 
 You will get the most out of this workshop if you have at least a small amount of prior experience with basic CSS, but this is not absolutely necessary.
 
 ### Requirements:
-A computer with a code editor of some sort (atom or sublime preferred) and Google Chrome installed. 
+A computer with Atom (or the code editor of your choice) and Google Chrome installed.
 
 * https://www.google.com/chrome/browser/desktop/index.html
 * https://atom.io/
-* https://www.sublimetext.com/
