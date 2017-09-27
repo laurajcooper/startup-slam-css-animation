@@ -402,6 +402,25 @@ a.highlight {
   }
 }
 
+.slide.animation-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    top: 0;
+    transform: translateY(0);
+  }
+
+  img {
+    max-width: 350px;
+  }
+
+  &:after {
+    height: 0;
+  }
+}
+
 /* Progress Bar */
 #timer {
   height: 4px;

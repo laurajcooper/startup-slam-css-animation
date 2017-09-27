@@ -493,21 +493,45 @@ a.highlight {
   text-transform: uppercase;
 }
 
+/* line 405, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+.slide.animation-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* line 410, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+.slide.animation-time h1 {
+  top: 0;
+  transform: translateY(0);
+}
+
+/* line 415, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+.slide.animation-time img {
+  max-width: 350px;
+}
+
+/* line 419, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+.slide.animation-time:after {
+  height: 0;
+}
+
 /* Progress Bar */
-/* line 406, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 425, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 #timer {
   height: 4px;
   line-height: 4px;
   background: #000;
 }
 
-/* line 411, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 430, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 #timer:before {
   content: "";
 }
 
 /* textarea for dynamic CSS demos */
-/* line 417, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 436, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .edit {
   float: left;
   background: #FFEFD5;
@@ -523,18 +547,18 @@ a.highlight {
   font-weight: bold;
 }
 
-/* line 432, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 451, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 p textarea.snippet {
   margin-top: -15px;
   margin-bottom: -10px;
 }
 
-/* line 436, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 455, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 p .edit {
   margin-top: -34px;
 }
 
-/* line 440, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 459, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 textarea.snippet {
   width: 100%;
   border: 1px solid #222;
@@ -545,39 +569,39 @@ textarea.snippet {
   line-height: 1.4;
 }
 
-/* line 449, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 468, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 textarea.snippet + .example {
   margin-top: 0;
 }
 
 /* Creates border for slide examples */
-/* line 455, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 474, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .example,
 blockquote {
   font-size: 2.88rem;
   margin: 15px 0;
 }
 
-/* line 460, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 479, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .example p,
 blockquote p {
   margin: 10px;
 }
 
-/* line 464, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 483, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .example {
   border: 1px solid #bdc3c7;
   padding: 5px 10px;
 }
 
-/* line 468, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 487, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 blockquote {
   background: #fff;
   border: 3px solid rgba(177, 9, 170, 0.2);
 }
 
 /* Incremental slides */
-/* line 474, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 493, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .delayed.displayed,
 .delayed-children > .displayed {
   opacity: 1;
@@ -594,7 +618,7 @@ e.g.
   </span>
 </h1>
 */
-/* line 491, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 510, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .heading-bg span {
   background: rgba(6, 168, 65, 0.8);
   border-radius: 5px;
@@ -602,12 +626,12 @@ e.g.
   box-decoration-break: clone;
 }
 
-/* line 497, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 516, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .heading-bg span.light {
   background: rgba(255, 255, 255, 0.6);
 }
 
-/* line 500, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 519, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .heading-bg span.dark, .heading-bg span.light {
   color: #222;
 }
@@ -615,29 +639,29 @@ e.g.
 /* Pre-workshop & intro slides
 -----------------------------*/
 /* welcome / 1st slide */
-/* line 510, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 529, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome.slide {
   padding: 0;
 }
 
-/* line 513, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 532, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome .logo-stacked {
   margin-right: 50px;
 }
 
-/* line 516, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 535, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome h1,
 .welcome .instructions {
   padding: 30px 64px;
 }
 
-/* line 520, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 539, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome .instructions p {
   margin: 0;
   line-height: 1.32;
 }
 
-/* line 524, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 543, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome h1 {
   background: #111;
   line-height: 1;
@@ -645,7 +669,7 @@ e.g.
   font-size: 55px;
 }
 
-/* line 530, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 549, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome h2 {
   float: left;
   color: black;
@@ -656,50 +680,50 @@ e.g.
   font-size: 30px;
 }
 
-/* line 539, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 558, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome ol, .welcome ul {
   float: left;
   width: 79%;
   margin: 0;
 }
 
-/* line 544, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 563, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome ol ul, .welcome ol ol, .welcome ul ul, .welcome ul ol {
   float: none;
   width: 100%;
 }
 
-/* line 548, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 567, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome ol.connected li:before, .welcome ul.connected li:before {
   content: "";
 }
 
-/* line 551, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 570, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .welcome ol.downloads > li, .welcome ul.downloads > li {
   margin-bottom: 15px;
 }
 
 /* Instructor Info */
-/* line 560, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 579, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro h1, .slide.intro h2,
 .slide.last h1,
 .slide.last h2 {
   font-weight: 400;
 }
 
-/* line 563, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 582, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro h1,
 .slide.last h1 {
   font-size: 7.5rem;
 }
 
-/* line 566, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 585, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro h2,
 .slide.last h2 {
   font-size: 4rem;
 }
 
-/* line 569, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 588, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro .instructor,
 .slide.last .instructor {
   border-radius: 50%;
@@ -708,50 +732,50 @@ e.g.
   margin-right: 30px;
 }
 
-/* line 575, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 594, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro .cursive,
 .slide.last .cursive {
   margin-left: -5px;
 }
 
-/* line 578, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 597, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro ul li,
 .slide.last ul li {
   margin: 0;
 }
 
-/* line 581, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 600, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro ul li:before,
 .slide.last ul li:before {
   content: "";
 }
 
-/* line 585, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 604, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro:after {
   height: 0px;
 }
 
-/* line 588, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 607, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro h1, .slide.intro h2 {
   color: #fff;
 }
 
-/* line 591, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 610, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro h1 {
   margin-bottom: 10px;
 }
 
-/* line 594, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 613, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro a {
   color: white;
 }
 
-/* line 597, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 616, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.intro footer a {
   color: #06A841;
 }
 
-/* line 602, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 621, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.last .heading-bg {
   font-family: "Cabin", sans-serif;
   text-transform: uppercase;
@@ -759,14 +783,14 @@ e.g.
   margin-bottom: 20px;
 }
 
-/* line 608, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 627, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .slide.last .attribution {
   position: absolute;
   bottom: 15px;
   font-size: 1.6rem;
 }
 
-/* line 614, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 633, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .sponsor {
   position: absolute;
   bottom: 45px;
@@ -776,14 +800,14 @@ e.g.
   color: white;
 }
 
-/* line 622, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 641, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .sponsor img {
   width: 300px;
   margin-right: -9px;
 }
 
 /* copyright & footer info */
-/* line 628, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 647, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 footer {
   position: fixed;
   bottom: 0;
@@ -792,73 +816,73 @@ footer {
   font-size: 1.6rem;
 }
 
-/* line 635, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 654, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 footer p {
   margin: 6px 10px 0 8px;
 }
 
-/* line 638, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 657, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 footer .arrow {
   color: #06A841;
 }
 
-/* line 641, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 660, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 footer img {
   margin-bottom: -5px;
 }
 
 /* Table of contents
 ---------------------*/
-/* line 650, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 669, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .table-of-contents {
   font-size: 2.88rem;
 }
 
-/* line 653, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 672, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .table-of-contents li {
   margin-bottom: 2px;
 }
 
-/* line 656, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 675, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .table-of-contents a {
   color: #222;
 }
 
-/* line 659, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 678, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .table-of-contents a:hover {
   color: #06A841;
 }
 
 /* code blocks
 -----------------------------*/
-/* line 668, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 687, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 pre {
   margin: 18px 0 12px;
   white-space: pre-wrap;
 }
 
-/* line 672, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 691, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 pre code {
   overflow-y: auto;
   font-size: 2.4rem;
 }
 
-/* line 677, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 696, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 pre + pre {
   margin-top: 15px;
 }
 
-/* line 680, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 699, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 pre + h2 {
   margin-top: 25px;
 }
 
-/* line 683, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 702, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 pre + hr {
   margin-top: 35px;
 }
 
-/* line 687, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 706, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 code {
   color: #555;
   padding: 0 8px;
@@ -872,13 +896,13 @@ code {
 
 /* Targets only firefox */
 @-moz-document url-prefix() {
-  /* line 699, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+  /* line 718, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
   code {
     font-size: 3rem;
   }
 }
 
-/* line 705, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 724, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .highlighted-tags strong {
   background: #ddd;
   padding: 5px;
@@ -887,14 +911,14 @@ code {
   font-weight: bold;
 }
 
-/* line 712, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 731, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .highlighted-tags strong [class^="hljs-"] {
   color: black;
   font-weight: bold;
 }
 
 /* highlight.js customizations */
-/* line 719, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 738, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .hljs {
   padding: 12px;
   border-radius: 2px;
@@ -902,20 +926,20 @@ code {
   word-wrap: break-word;
 }
 
-/* line 725, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 744, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .hljs-doctype,
 .hljs-comment {
   color: #990;
 }
 
-/* line 729, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 748, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .php .hljs-preprocessor {
   color: green;
 }
 
 /* presenter notes overrides
 -----------------------------*/
-/* line 736, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 755, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .presenter-notes {
   bottom: 0;
   width: 100%;
@@ -925,7 +949,7 @@ code {
   max-height: inherit;
 }
 
-/* line 744, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
+/* line 763, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_theme.scss */
 .presenter-notes p {
   margin-top: 0;
 }
@@ -1085,6 +1109,26 @@ code {
   animation: blue-to-red-spin 2s infinite;
   width: 100px;
   height: 100px;
+}
+
+/* line 149, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_workshop.scss */
+.button-transition {
+  background-color: darkgray;
+  transition: all 0.3s ease-in-out;
+  width: 400px;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 0;
+}
+
+/* line 161, /Users/lauracooper/Desktop/Startup Slam Presentation/css-animation-slides/framework/sass/_workshop.scss */
+.button-transition:hover {
+  background-color: black;
+  color: #ffffff;
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=../css/styles.map */

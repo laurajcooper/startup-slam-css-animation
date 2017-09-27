@@ -145,3 +145,21 @@
   width: 100px;
   height: 100px;
 }
+
+.button-transition {
+  background-color: darkgray;
+  transition: all 0.3s ease-in-out;
+  width: 400px;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 0;
+}
+
+.button-transition:hover {
+  background-color: black;
+  color: #ffffff;
+  border-radius: 30px;
+}

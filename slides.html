@@ -236,8 +236,20 @@
       <script type="text/template">
         <h1>Transition Example: Button Hover</h1>
 
+        ```
+        .button {
+          background-color: darkgray;
+          border-radius: 0;
+          transition: all 0.3s ease-in-out;
+        }
 
+        .button:hover {
+          background-color: black;
+          border-radius: 30px;
+        }
+        ```
 
+        <a class="button button-transition" href="#">HOVER OVER ME!</a>
 
         <a href="http://ianlunn.github.io/Hover/" target="_blank">Hover.css - A collection of CSS3 hover effects</a>
       </script>
@@ -447,9 +459,13 @@
       </script>
     </section>
 
-    <section class="slide title" data-markdown>
+    <section class="slide title animation-time" data-markdown>
       <script type="text/template">
       #Animation Time!
+
+      <div class="pizza-cat" style="text-align: center;">
+      ![pizza-dj-cat](framework/img/workshop/pizza-dj-cat.gif)
+    </div>
       </script>
     </section>
 
