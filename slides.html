@@ -79,20 +79,6 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #CSS: Cascading Style Sheets
-
-        * a different language from HTML
-        * a stylesheet language with its own syntax rules
-        * used to separate content (HTML) from presentation (CSS)
-
-        CSS requires these symbols: curly brackets `{ }`, colon `:`, semi-colon `;`
-
-        ![keyboard](framework/img/workshop/keyboard-css.png)
-      </script>
-    </section>
-
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
         #A WEBPAGE WITHOUT CSS
@@ -107,6 +93,20 @@
 
         <img src= "framework/img/css.jpg" alt="Website with CSS">
 
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS: Cascading Style Sheets
+
+        * a different language from HTML, with its own syntax rules
+        * used to separate content (HTML) from presentation (CSS)
+        * tells the browser how the content should look
+
+        CSS requires these symbols: curly brackets `{ }`, colon `:`, semi-colon `;`
+
+        ![keyboard](framework/img/workshop/keyboard-css.png)
       </script>
     </section>
 
@@ -136,14 +136,6 @@
       <script type="text/template">
         <div class="iframe-container">
           <iframe width="1000" height="750" src="https://codepen.io/yashbhardwaj/full/yFIiJ/"></iframe>
-        </div>
-      </script>
-    </section>
-
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        <div class="iframe-container">
-          <iframe width="1000" height="750" src="https://codepen.io/funkybudda/full/plgfa/"></iframe>
         </div>
       </script>
     </section>
@@ -545,7 +537,7 @@
       <script type="text/template">
         <h1>Exercise 2: Make the World Spin</h1>
 
-        Let's use some CSS magic to simulate a spinning globe effect using only a simple background image, one div, and some CSS rules.
+        We're going to make the earth spin, but not using rotate - we will simulate a spinning globe effect using only a simple background image, one div, and some CSS rules.
 
         Target the class "earth" and create a new keyframe called "spin" and make the background image move.
 
@@ -615,7 +607,7 @@
       <script type="text/template">
         <h1>Exercise 3: Make the Sun's Rays Grow</h1>
 
-        Our sun rays are animation the way we specified, but they aren't coming from the middle of the sun. We want our effects to happen from the center outwards, so we also need to set the <strong>transform-origin</strong> to the center of the svg.
+        Our sun rays are animating the way we specified, but they aren't coming from the middle of the sun! We want our effects to happen from the center outwards, so we also need to set the <strong>transform-origin</strong> to the center of the svg.
 
         ```
         .sun .ray {
@@ -626,42 +618,14 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        <h1>Exercise 4: Make the Rocket Launch</h1>
-
-        Our rocket would look better if it had some flickering flames. Let's create a keyframe called "fire" and use the scale transform property to increase and decrease the size of the flame slightly. We will be targeting the "flame" class inside the svg with the "rocket" class.
-
-        In this case, we want to set our transform origin to 100% 0.
-
-        ```
-        @keyframes fire {
-          0% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.1);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
-
-        .rocket .flame {
-          animation: fire 200ms infinite ease-in-out;
-          transform-origin: 100% 0%;
-        }
-        ```
-      </script>
-    </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
         <h1>Exercise 4: Make the Rocket Launch</h1>
 
-        Next, we're going to make it so our rocket flies away when clicked on.
+        Next, we're going to make our rocket fly away when clicked on.
 
-        For this example, we're using a CSS pseudo-class called <strong>:focus</strong> to trigger our animation only when the rocket SVG is clicked on, but normally you would want to use something like JavaScript instead to more accurately target user interactions.
+        For this example, we're using a CSS <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">pseudo-class</a> called <strong>:focus</strong> to trigger our animation only when the rocket SVG is clicked on, but normally you would want to use something like JavaScript instead to more accurately target user interactions.
 
         ```
         @keyframes fly {
